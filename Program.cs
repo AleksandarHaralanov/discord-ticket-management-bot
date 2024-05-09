@@ -14,7 +14,6 @@ using System.Threading.Tasks;
 
 namespace OMNI
 {
-
     internal class Program
     {
         private static DiscordClient Client { get; set; }
