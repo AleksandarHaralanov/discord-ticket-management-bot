@@ -21,7 +21,6 @@ namespace OMNI
 
         static async Task Main(string[] args)
         {
-
             // Fancify
             Console.Title = "OMNI";
             string fileContents = File.ReadAllText("..\\..\\intro.txt");
