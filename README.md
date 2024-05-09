@@ -3,6 +3,5 @@ Discord bot made with DSharpPlus (D#+) that simplifies ticket management by util
 
 Pre-requisite NuGet Packages:
 - DSharpPlus
-- DSharpPlus.Interactivity
 - DSharpPlus.SlashCommands
 - Newtonsoft.Json

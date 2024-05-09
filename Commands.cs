@@ -13,7 +13,15 @@ namespace OMNI.Commands
         [SlashRequirePermissions(Permissions.Administrator)]
         public async Task SetupTicketingSystem(InteractionContext ctx)
         {
-            await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder().WithContent("Hello world!"));
+            /*await ctx.CreateResponseAsync(InteractionResponseType.DeferredChannelMessageWithSource);
+
+            var openTicket = new DiscordButtonComponent(ButtonStyle.Primary, "create", "Create Support Thread");
+            var closeTicket = new DiscordButtonComponent(ButtonStyle.Danger, "close", "Close Existing Thread");
+
+            await ctx.FollowUpAsync(new DiscordFollowupMessageBuilder().AddComponents(openTicket, closeTicket).AddEmbed(new DiscordEmbedBuilder()
+                .WithColor(DiscordColor.CornflowerBlue)
+                .WithTitle("❓ Support Ticket")
+                .WithDescription("Click below to start a new support thread!")));*/
         }
     }
 }

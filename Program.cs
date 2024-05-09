@@ -9,6 +9,7 @@ using OMNI.Commands;
 using OMNI.Config;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -30,8 +31,13 @@ namespace OMNI
 
             if (!File.Exists(configFilePath))
             {
-                Console.WriteLine("Token:");
+                Console.WriteLine("OMNI has detected that the bot token has not yet been configured. Please set up the bot token to continue.\n");
+                Console.Write(" > Token: ");
                 string token = Console.ReadLine();
+                Console.WriteLine("\nToken will be saved at: " + configFilePath + "\n");
+                Console.WriteLine("Please note this directory before proceeding, as entering an incorrect token will cause the bot to crash.\nIf this occurs, delete the configuration and restart the setup.\n");
+                Console.Write(" > Press any key to continue.");
+                Console.ReadKey();
 
                 var tokenData = new Dictionary<string, string>
                 {
