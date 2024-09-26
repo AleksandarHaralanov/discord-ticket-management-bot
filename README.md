@@ -1,4 +1,4 @@
-# OMNI
+# Discord Ticket Management Bot
 Discord bot made with DSharpPlus (D#+) that simplifies ticket management by utilizing private threads!
 
 # Pre-requisites:
